@@ -17,9 +17,9 @@ Download using the [GitHub .zip download](https://github.com/dracula/freecad/arc
    (MacOS) or `C:/[INSTALLATION_PATH]/FreeCAD/data/Gui/Stylesheets/` (Windows)
 
 2. Copy `user.cfg` to `~/.FreeCAD/` (Linux)
-   `/Users/[YOUR_USER_NAME]/Library/Preferences/FreeCAD/Gui/Stylesheets/`
-   (MacOS) or `C:/[INSTALLATION_PATH]/FreeCAD/data/` (Windows). Note that will
-   override any existing configuration - if you want to preserve your original
+   `/Users/[YOUR_USER_NAME]/Library/Preferences/FreeCAD/` (MacOS) or
+   `C:/[INSTALLATION_PATH]/FreeCAD/data/` (Windows). Note that will override
+   any existing configuration - if you want to preserve your original
    configuration, you will need to manually merge the two `user.cfg` files
 
 3. Boom! It's working
