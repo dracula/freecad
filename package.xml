@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
   <name>Dracula</name>
-  <description>🧛🏻‍♂️ Dark Theme for FreeCAD</description>
+  <description>Dracula dark theme for FreeCAD</description>
   <version>0.0.1</version>
-  <maintainer email="tim@clifford.lol">tim-clifford</maintainer>
+  <maintainer email="tim@clifford.lol">Tim Clifford</maintainer>
   <license file="LICENSE">MIT</license>
   <url type="repository" branch="master">https://github.com/dracula/freecad</url>
   <icon>resources/icons/Dracula.svg</icon>
@@ -11,7 +11,7 @@
   <content>
     <preferencepack>
       <name>Dracula</name>
-      <description>🧛🏻‍♂️ Dark Theme for FreeCAD</description>
+      <description>Dracula dark theme for FreeCAD</description>
       <tag>color</tag>
       <tag>dark</tag>
       <tag>dracula</tag>
