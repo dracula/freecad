@@ -1,25 +1,17 @@
 ### [FreeCAD](https://www.freecadweb.org)
 
-#### Install using Git
+#### Install using FreeCAD
 
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
-
-    git clone https://github.com/dracula/freecad.git
+Starting with FreeCAD 0.20, this theme is available via the [Addon manager](https://wiki.freecadweb.org/Std_AddonMgr)!
 
 #### Install manually
 
-Download using the [GitHub .zip download](https://github.com/dracula/freecad/archive/master.zip) option and unzip them.
+Refer to [the FreeCAD wiki](https://wiki.freecadweb.org/Preference_Packs#Distributing_a_pack) for manual installation instructions.
 
 #### Activating theme
 
-1. Copy `dracula.qss` to `~/.FreeCAD/Gui/Stylesheets/` (Linux)
-   `/Users/[YOUR_USER_NAME]/Library/Preferences/FreeCAD/Gui/Stylesheets/`
-   (MacOS) or `C:/[INSTALLATION_PATH]/FreeCAD/data/Gui/Stylesheets/` (Windows)
+1. Install the PreferencePack either using the [Addon manager](https://wiki.freecadweb.org/Std_AddonMgr) inside FreeCAD or [manually](https://wiki.freecadweb.org/Preference_Packs#Distributing_a_pack).
 
-2. Copy `user.cfg` to `~/.FreeCAD/` (Linux)
-   `/Users/[YOUR_USER_NAME]/Library/Preferences/FreeCAD/` (MacOS) or
-   `C:/[INSTALLATION_PATH]/FreeCAD/data/` (Windows). Note that will override
-   any existing configuration - if you want to preserve your original
-   configuration, you will need to manually merge the two `user.cfg` files
+2. Activate the pack via Preferences -> General -> Preference packs -> Dracula -> Apply
 
 3. Boom! It's working
