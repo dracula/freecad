@@ -2033,13 +2033,9 @@ QToolBar QToolButton#qt_toolbar_ext_button:on {
 Tables (spreadsheets)
 ==================================================================================================*/
 QTableView {
-    gridline-color: #6e707f;
+    gridline-color: #44475a;
     selection-color: #535d7f;
     selection-background-color: #8be9fd;
-}
-
-QTableView::item:hover  {
-    background-color: rgba(0,0,0,10);  /* temporal: is it displayed in Linux or Windows? on OSX it isn't */
 }
 
 QTableView::item:disabled  {
@@ -2047,9 +2043,10 @@ QTableView::item:disabled  {
 }
 
 QTableView::item:selected  {
-    color: #535d7f;
-    border-color: #f8f8f2; /* same as focused background color */
+    color: #f8f8f2;
+    border-color: #f8f8f2; /* same as focused background color*/
     border-bottom-color: #ffb86c; /* same as focused border color */
+    background-color: #6272a4; /* must be defined?: aliased cells default to "regular" color when selected if this style is not explicitly set*/
 }
 
 /* fix for elements inside the cells */
