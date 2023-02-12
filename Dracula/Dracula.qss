@@ -144,7 +144,7 @@ QMenu::item:pressed {
 QMenu::right-arrow {
     width: 10px;
     height: 10px;
-    image:url(qss:images_dark-light/right_arrow_dark.svg);
+    image:url(qss:images_dark-light/right_arrow_lighter.svg);
     margin-right: 2px;
 }
 
