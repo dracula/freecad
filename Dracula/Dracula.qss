@@ -749,26 +749,24 @@ Tree and list views
 QTreeView,
 QListView,
 QTableView {
-    color: #d5d6da;
+    color: #f8f8f2;
     background-color: #282a36;
     alternate-background-color: #1b1c24; /* related with QListView background  */
     border: 1px solid #1b1c24;
     selection-color: #ffffff;
     selection-background-color: #6272a4; /* should be similar to QListView::item selected background-color */
-    show-decoration-selected: 1; /* make the selection span the entire width of the view */
     border-radius: 3px;
-}
-
-QListView::item:hover,
-QTreeView::item:hover  {
-    background-color: transparent; /* fix to homogenize it on all OSs */
 }
 
 QListView::item:selected,
 QTreeView::item:selected  {
     color: #ffffff; /* should be similar to QListView selection-color */
     background-color: #6272a4; /* should be similar to QListView selection-background-color */
-    show-decoration-selected: 1; /* make the selection span the entire width of the view */
+}
+
+QListView,
+QTableView {
+    show-decoration-selected: 1;
 }
 
 /* Property Editor QTreeView (FreeCAD custom widget) */
