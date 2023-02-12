@@ -141,6 +141,11 @@ QMenu::item:pressed {
     background-color: #6272a4;
 }
 
+QMenuBar::item:disabled,
+QMenu::item:disabled {
+    color: #6272a4;
+}
+
 QMenu::right-arrow {
     width: 10px;
     height: 10px;
