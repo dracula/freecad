@@ -149,7 +149,7 @@ QMenu::item:disabled {
 QMenu::right-arrow {
     width: 10px;
     height: 10px;
-    image:url(qss:images_dark-light/right_arrow_lighter.svg);
+    image:url(qss:images_dark-light/right_arrow_light.svg);
     margin-right: 2px;
 }
 
