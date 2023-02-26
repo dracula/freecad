@@ -764,6 +764,10 @@ QTreeView::item:selected  {
     background-color: #6272a4; /* should be similar to QListView selection-background-color */
 }
 
+QTreeView {
+    show-decoration-selected: 0;
+}
+
 QListView,
 QTableView {
     show-decoration-selected: 1;
