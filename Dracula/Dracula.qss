@@ -931,6 +931,10 @@ QHeaderView::section {
     background-color: #1b1c24;
 }
 
+QHeaderView::section:hover {
+    background-color: #282a36;
+}
+
 QHeaderView::section:horizontal {
     padding: 4px 6px; /* left and right value similar to QHeaderView::section */
     border-right: 1px solid rgba(255,255,255,30);
