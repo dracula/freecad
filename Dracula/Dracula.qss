@@ -1208,7 +1208,7 @@ QTextEdit,
 QTimeEdit,
 QDateEdit,
 QDateTimeEdit {
-    color: #9799a3;
+    color: #eaebed;
     background-color: #282a36;
     selection-color: white;
     selection-background-color: #535d7f ;
