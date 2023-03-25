@@ -1995,7 +1995,7 @@ QToolBar > QToolButton#qt_toolbutton_menubutton::menu-button:open {
 }
 
 QToolBar > QToolButton::menu-arrow {
-    background-image: url(qss:images_dark-light/down_arrow_dark.svg);
+    background-image: url(qss:images_dark-light/down_arrow_light.svg);
     background-position: center center;
     background-repeat: none;
     subcontrol-origin: padding;
