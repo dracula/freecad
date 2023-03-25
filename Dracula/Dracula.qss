@@ -141,10 +141,15 @@ QMenu::item:pressed {
     background-color: #6272a4;
 }
 
+QMenuBar::item:disabled,
+QMenu::item:disabled {
+    color: #6272a4;
+}
+
 QMenu::right-arrow {
     width: 10px;
     height: 10px;
-    image:url(qss:images_dark-light/right_arrow_dark.svg);
+    image:url(qss:images_dark-light/right_arrow_light.svg);
     margin-right: 2px;
 }
 
@@ -175,8 +180,17 @@ QMenu::separator {
     margin: 6px 4px;
 }
 
+QMenu::indicator:non-exclusive {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 2px;
+    border: 2px solid #535d7f;
+    border-radius: 2px;
+}
+
 QMenu::indicator:non-exclusive:checked {
-    color: white;
+    image:url(qss:images_dark-light/checkbox_light.svg);
 }
 
 /* Fix for elements inside a drop-down menu */
