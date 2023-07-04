@@ -668,7 +668,7 @@ QTabBar::close-button {
     subcontrol-origin: margin;
     subcontrol-position: center right; /* only works for Qt 4.6 and newer */;
     border-radius: 2px;
-    background-image: url(qss:images_dark-light/close_dark.svg);
+    background-image: url(qss:images_dark-light/close_light.svg);
     background-position: center center;
     background-repeat: none;
 }
