@@ -690,40 +690,78 @@ QDockWidget QTableView {
     min-height: 40px; /* necessary in some areas of FreeCAD */
 }
 
-/* Buttons to scroll tabs if there is not space to show all of them: */
-QTabBar::scroller {
-    width: 20px; /* the width of the scroll buttons */
+/*=================================================================================================
+Tab bar scroll buttons
+=================================================================================================*/
+
+QTabBar::scroller { /* only accepts width property */
+    width: 80px; /* the width of the scroll buttons */
 }
 
-QTabBar QToolButton,
-QTabBar QToolButton:hover {
-    background-color: #1b1c24; /* same as main background color */
+QTabBar QToolButton { /* same properties as QDialog QToolButton */
+    color: #d5d6da;
+    text-align: center;
+    background-color: #44475a;
+    border: 1px solid black;
+    border-bottom-color: black; /* simulates shadow under the button */
+    padding: 0px; /* different than regular QPushButton */
+    margin: 2px; /* different than regular QPushButton */
+    min-height: 16px; /* same as QTabBar QPushButton min-width */
+    border-radius: 4px;
 }
 
-QTabBar QToolButton::right-arrow:enabled {
-     image: url(qss:images_dark-light/right_arrow_dark.svg);
+QTabBar QToolButton:hover,
+QTabBar QToolButton:focus {
+    color: #f8f8f2;
+    border-color: #535d7f;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #6272a4, stop:1 #535d7f);
+}
+
+QTabBar QToolButton:disabled,
+QQTabBar QToolButton:disabled:checked {
+    color: #1b1c24;
+    border-color: #1b1c24;
+    background-color: #1b1c24;
+}
+
+QTabBar QToolButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #535d7f, stop:1 #6272a4);
+}
+
+QTabBar QToolButton::right-arrow { /* the arrow mark in the tool buttons */
+    image:url(qss:images_dark-light/right_arrow_light.svg);
+    padding-left:10px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:3px;
 }
 
 QTabBar QToolButton::right-arrow:disabled,
 QTabBar QToolButton::right-arrow:off {
-     image: url(qss:images_dark-light/right_arrow_disabled_dark.svg);
+    image: url(qss:images_dark-light/right_arrow_disabled_light.svg);
+    /* todo */
 }
 
 QTabBar QToolButton::right-arrow:hover {
-     image: url(qss:images_dark-light/right_arrow_darker.svg);
+    image:url(qss:images_dark-light/right_arrow_lighter.svg);
 }
 
- QTabBar QToolButton::left-arrow:enabled {
-     image: url(qss:images_dark-light/left_arrow_dark.svg);
+QTabBar QToolButton::left-arrow { /* the arrow mark in the tool buttons */
+    image:url(qss:images_dark-light/left_arrow_light.svg);
+    padding-left:5px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:3px;
 }
 
  QTabBar QToolButton::left-arrow:disabled,
  QTabBar QToolButton::left-arrow:off {
-     image: url(qss:images_dark-light/left_arrow_disabled_dark.svg);
+     image: url(qss:images_dark-light/left_arrow_disabled_light.svg);
+    /* todo */
 }
 
  QTabBar QToolButton::left-arrow:hover {
-     image: url(qss:images_dark-light/left_arrow_darker.svg);
+    image:url(qss:images_dark-light/left_arrow_lighter.svg);
 }
 
  QTabBar QToolButton::up-arrow:enabled {
@@ -1557,10 +1595,11 @@ QPushButton:checked {
 Tool button inside QDialogs that works as QPushButtons
 ==================================================================================================*/
 /* found under Tools -> Customize -> Macros -> Pixmap "..." button */
+/* properties match QToolBar > QToolButton */
 QDialog QToolButton {
     color: #d5d6da;
     text-align: center;
-    background-color: qlineargradient(spread:pad, x1:0, y1:0.3, x2:0, y2:1, stop:0 #1b1c24, stop:1 black);
+    background-color: #44475a;
     border: 1px solid black;
     border-bottom-color: black; /* simulates shadow under the button */
     padding: 0px; /* different than regular QPushButton */
