@@ -846,18 +846,6 @@ Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel:disabled {
     padding: 0px;
 }
 
-/* hack to hide non editable cells inside Property values */
-Gui--PropertyEditor--PropertyEditor QLineEdit:read-only,
-Gui--PropertyEditor--PropertyEditor QLineEdit:disabled,
-Gui--PropertyEditor--PropertyEditor QAbstractSpinBox:read-only,
-Gui--PropertyEditor--PropertyEditor QAbstractSpinBox:disabled {
-    color: transparent;
-    border-color: transparent;
-    background-color: transparent;
-    selection-color: transparent;
-    selection-background-color: transparent;
-}
-
 /* hack to hide weird redundant information inside cells with links and no editable data (but editable via "..." button) */
 Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
 	color: #bd93f9;
@@ -929,19 +917,6 @@ QTreeView > QWidget > QDateEdit:focus,
 QTreeView > QWidget > QDateTimeEdit:focus {
     border-color: #1b1c24; /* same as focused background color */
     border-bottom-color: black; /* same as focused border color */
-}
-
-QTreeView > QWidget > QAbstractSpinBox:read-only,
-QTreeView > QWidget > QSpinBox:read-only,
-QTreeView > QWidget > QDoubleSpinBox:read-only,
-QTreeView > QWidget > QLineEdit:read-only,
-QTreeView > QWidget > QTextEdit:read-only,
-QTreeView > QWidget > QTimeEdit:read-only,
-QTreeView > QWidget > QDateEdit:read-only,
-QTreeView > QWidget > QDateTimeEdit:read-only {
-    color: transparent;
-    background-color: transparent;
-    border-color: transparent;
 }
 
 /* Fix to correctly (not totally) draw QTextEdit on OSX at Page properties: "Page result", "Template" and "Editable Texts" */
