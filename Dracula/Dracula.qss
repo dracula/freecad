@@ -852,6 +852,10 @@ Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
 	background-color: #6272a4; /* same as focused background color */
 }
 
+QLabel[haslink="true"] { /* applies to all links, but most importantly in PropertyEditor. Trying to specify PropertyEditor fails.*/
+    color: #8be9fd;
+}
+
 /* hack to disable margin inside Property values to following elements */
 Gui--PropertyEditor--PropertyEditor QSpinBox,
 Gui--PropertyEditor--PropertyEditor QDoubleSpinBox,
