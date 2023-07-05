@@ -830,29 +830,22 @@ Gui--PropertyEditor--PropertyEditor {
     gridline-color: #1b1c24; /* same as Group header background */
 }
 
-/* fix for column items background when a link is present */
-Gui--PropertyEditor--PropertyEditor > QWidget > QFrame:focus {
-    background-color: #6272a4; /* same as focused background color */
-}
-
-/* hack to hide weird redundant information inside the value of a Placement cell */
-Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel,
-Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel:disabled {
-    color: transparent;
-    background-color: transparent;
-    border: none;
-    border-radius: 0px;
-    margin: 0px;
-    padding: 0px;
-}
-
-/* hack to hide weird redundant information inside cells with links and no editable data (but editable via "..." button) */
+/* Cells with values that can only be changed with "..." button (Attachment)
+/* These seem to draw on top of the underlying label, so can't be transparent */
 Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
-	color: #bd93f9;
-	background-color: #6272a4; /* same as focused background color */
+	color: #ffb86c;
+	background-color: #6272a4;
+	margin-left:1px;
 }
 
-QLabel[haslink="true"] { /* applies to all links, but most importantly in PropertyEditor. Trying to specify PropertyEditor fails.*/
+/* Cells with values that can only be changed with "..." button, but are disabled (Placement) */
+/* These seem to draw on top of the underlying label, so can't be transparent */
+Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel:disabled {
+	color: #acadb6;
+	background-color: #6272a4;
+}
+
+QLabel[haslink="true"] { /* applies to all links (See Help->About), but most importantly in PropertyEditor. Trying to specify PropertyEditor fails.*/
     color: #8be9fd;
 }
 
@@ -919,7 +912,7 @@ QTreeView > QWidget > QTextEdit:focus,
 QTreeView > QWidget > QTimeEdit:focus,
 QTreeView > QWidget > QDateEdit:focus,
 QTreeView > QWidget > QDateTimeEdit:focus {
-    border-color: #1b1c24; /* same as focused background color */
+    border-color: transparent; /* same as focused background color */
     border-bottom-color: black; /* same as focused border color */
 }
 
@@ -1283,7 +1276,7 @@ QTextEdit:disabled,
 QTimeEdit:disabled,
 QDateEdit:disabled,
 QDateTimeEdit:disabled {
-    color: #282a36;
+    color: #6272a4;
     background-color: #1b1c24; /* same as enabled color */
     border-color: #1b1c24; /* same as enabled color */
 }
