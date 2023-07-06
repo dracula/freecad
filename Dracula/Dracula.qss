@@ -831,7 +831,7 @@ Gui--PropertyEditor--PropertyEditor {
 }
 
 /* Cells with values that can only be changed with "..." button (Attachment)
-/* These seem to draw on top of the underlying label, so can't be transparent */
+/* These seem to draw on top of the underlying label, so must be completely hidden or have an opaque background */
 Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
 	color: #ffb86c;
 	background-color: #6272a4;
@@ -839,10 +839,10 @@ Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
 }
 
 /* Cells with values that can only be changed with "..." button, but are disabled (Placement) */
-/* These seem to draw on top of the underlying label, so can't be transparent */
+/* These seem to draw on top of the underlying label, so must be completely hidden or have an opaque background */
 Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel:disabled {
-	color: #acadb6;
-	background-color: #6272a4;
+	color: transparent;
+	background-color: transparent;
 }
 
 QLabel[haslink="true"] { /* applies to all links (See Help->About), but most importantly in PropertyEditor. Trying to specify PropertyEditor fails.*/
@@ -859,6 +859,14 @@ Gui--PropertyEditor--PropertyEditor QComboBox {
     margin-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+Gui--PropertyEditor--PropertyEditor QSpinBox:disabled,
+Gui--PropertyEditor--PropertyEditor QDoubleSpinBox:disabled,
+Gui--PropertyEditor--PropertyEditor QAbstractSpinBox:disabled,
+Gui--PropertyEditor--PropertyEditor QLineEdit:disabled,
+Gui--PropertyEditor--PropertyEditor QComboBox:disabled {
+    selection-background-color:transparent;
 }
 
 /* reset min-height to 0px inside list views */
