@@ -2067,24 +2067,23 @@ QToolBar > QToolButton:checked:hover {
 
 /*The "show more" button  (it can also be stylable with "QToolBarExtension" */
 QToolBar QToolButton#qt_toolbar_ext_button {
-    margin: 0px;
+    margin: 1px;
     padding: 0px;
-    /*background-image: url(qss:images_dark-light/more_dark.svg);*/
+    qproperty-icon: url(qss:images_dark-light/more_light.svg);
     image: transparent;
     background-repeat: none;
     background-position: center left;
 }
 
 QToolBar QToolButton#qt_toolbar_ext_button:hover {
-    /*background-image: url(qss:images_dark-light/more_light.svg);*/
+    qproperty-icon: url(qss:images_dark-light/more_light.svg);
     border-color: #1b1c24;
-    background-color: #1b1c24;
-}
+    background-color: rgba(255,255,255,20)}
 
 QToolBar QToolButton#qt_toolbar_ext_button:on {
-    /*background-image: url(qss:images_dark-light/more_light.svg);*/
+    qproperty-icon: url(qss:images_dark-light/more_light.svg);
     border-color: #1b1c24;
-    background-color: #1b1c24;
+    background-color: #6272a4;
 }
 
 
