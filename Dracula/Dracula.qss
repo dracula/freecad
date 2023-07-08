@@ -1684,7 +1684,7 @@ Radio button
 QRadioButton::indicator:unchecked{
     color: black;
     background-color: rgba(0,0,0,40);
-    border: 1px solid #282a36;
+    border: 1px solid #6272a4;
 }
 
 QRadioButton::indicator:checked {
@@ -1723,7 +1723,7 @@ QRadioButton::indicator:disabled {
 }
 
 QRadioButton:focus {
-    border: none;
+    border: 1px solid #535d7f;
 }
 
 
@@ -1742,7 +1742,7 @@ QCheckBox::indicator,
 QGroupBox::indicator {
     color: black;
     background-color: rgba(0,0,0,40);
-    border: 1px solid #282a36;
+    border: 1px solid #6272a4;
     width: 11px;
     height: 11px;
     border-radius:2px;
@@ -1785,7 +1785,7 @@ QGroupBox::indicator:indeterminate {
 }
 
 QCheckBox:focus {
-    border: none;
+    border: 1px solid #535d7f;
 }
 
 
