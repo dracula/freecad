@@ -1590,7 +1590,7 @@ QPushButton:checked {
     border-color: #6272a4;
 }
 
-/* For styling Buttons inside tables, found in Preferences > Workbenches */
+/* For styling Buttons inside tables, found in Preferences > Preference Packs */
 /* Padding & margins specifically for these buttons prevents overlap of buttons between table rows */
 QTableWidget QPushButton {
     padding-top:1px;
