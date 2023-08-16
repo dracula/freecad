@@ -1304,7 +1304,7 @@ QTextEdit:disabled,
 QTimeEdit:disabled,
 QDateEdit:disabled,
 QDateTimeEdit:disabled {
-    color: #282a36;
+    color: #6272a4;
     background-color: #1b1c24; /* same as enabled color */
     border-color: #1b1c24; /* same as enabled color */
 }
