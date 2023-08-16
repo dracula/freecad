@@ -2062,19 +2062,21 @@ QToolBar > QToolButton:checked:hover {
 QToolBar QToolButton#qt_toolbar_ext_button {
     margin: 1px;
     padding: 0px;
-    qproperty-icon: url(qss:images_dark-light/more_light.svg);
+    padding-left:1px;
+    padding-right:1px;
+    qproperty-icon: url(qss:images_dark-light/right_arrow_light.svg);
     image: transparent;
     background-repeat: none;
     background-position: center left;
 }
 
 QToolBar QToolButton#qt_toolbar_ext_button:hover {
-    qproperty-icon: url(qss:images_dark-light/more_light.svg);
+    qproperty-icon: url(qss:images_dark-light/right_arrow_lighter.svg);
     border-color: #1b1c24;
     background-color: rgba(255,255,255,20)}
 
 QToolBar QToolButton#qt_toolbar_ext_button:on {
-    qproperty-icon: url(qss:images_dark-light/more_light.svg);
+    qproperty-icon: url(qss:images_dark-light/right_arrow_lighter.svg);
     border-color: #1b1c24;
     background-color: #6272a4;
 }
