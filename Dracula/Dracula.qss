@@ -830,38 +830,23 @@ Gui--PropertyEditor--PropertyEditor {
     gridline-color: #1b1c24; /* same as Group header background */
 }
 
-/* fix for column items background when a link is present */
-Gui--PropertyEditor--PropertyEditor > QWidget > QFrame:focus {
-    background-color: #6272a4; /* same as focused background color */
-}
-
-/* hack to hide weird redundant information inside the value of a Placement cell */
-Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel,
-Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel:disabled {
-    color: transparent;
-    background-color: transparent;
-    border: none;
-    border-radius: 0px;
-    margin: 0px;
-    padding: 0px;
-}
-
-/* hack to hide non editable cells inside Property values */
-Gui--PropertyEditor--PropertyEditor QLineEdit:read-only,
-Gui--PropertyEditor--PropertyEditor QLineEdit:disabled,
-Gui--PropertyEditor--PropertyEditor QAbstractSpinBox:read-only,
-Gui--PropertyEditor--PropertyEditor QAbstractSpinBox:disabled {
-    color: transparent;
-    border-color: transparent;
-    background-color: transparent;
-    selection-color: transparent;
-    selection-background-color: transparent;
-}
-
-/* hack to hide weird redundant information inside cells with links and no editable data (but editable via "..." button) */
+/* Cells with values that can only be changed with "..." button (Attachment)
+/* These seem to draw on top of the underlying label, so must be completely hidden or have an opaque background */
 Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
-	color: #bd93f9;
-	background-color: #6272a4; /* same as focused background color */
+	color: #ffb86c;
+	background-color: #6272a4;
+	margin-left:1px;
+}
+
+/* Cells with values that can only be changed with "..." button, but are disabled (Placement) */
+/* These seem to draw on top of the underlying label, so must be completely hidden or have an opaque background */
+Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel:disabled {
+	color: transparent;
+	background-color: transparent;
+}
+
+QLabel[haslink="true"] { /* applies to all links (See Help->About), but most importantly in PropertyEditor. Trying to specify PropertyEditor fails.*/
+    color: #8be9fd;
 }
 
 /* hack to disable margin inside Property values to following elements */
@@ -874,6 +859,14 @@ Gui--PropertyEditor--PropertyEditor QComboBox {
     margin-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+Gui--PropertyEditor--PropertyEditor QSpinBox:disabled,
+Gui--PropertyEditor--PropertyEditor QDoubleSpinBox:disabled,
+Gui--PropertyEditor--PropertyEditor QAbstractSpinBox:disabled,
+Gui--PropertyEditor--PropertyEditor QLineEdit:disabled,
+Gui--PropertyEditor--PropertyEditor QComboBox:disabled {
+    selection-background-color:transparent;
 }
 
 /* reset min-height to 0px inside list views */
@@ -927,21 +920,8 @@ QTreeView > QWidget > QTextEdit:focus,
 QTreeView > QWidget > QTimeEdit:focus,
 QTreeView > QWidget > QDateEdit:focus,
 QTreeView > QWidget > QDateTimeEdit:focus {
-    border-color: #1b1c24; /* same as focused background color */
+    border-color: transparent; /* same as focused background color */
     border-bottom-color: black; /* same as focused border color */
-}
-
-QTreeView > QWidget > QAbstractSpinBox:read-only,
-QTreeView > QWidget > QSpinBox:read-only,
-QTreeView > QWidget > QDoubleSpinBox:read-only,
-QTreeView > QWidget > QLineEdit:read-only,
-QTreeView > QWidget > QTextEdit:read-only,
-QTreeView > QWidget > QTimeEdit:read-only,
-QTreeView > QWidget > QDateEdit:read-only,
-QTreeView > QWidget > QDateTimeEdit:read-only {
-    color: transparent;
-    background-color: transparent;
-    border-color: transparent;
 }
 
 /* Fix to correctly (not totally) draw QTextEdit on OSX at Page properties: "Page result", "Template" and "Editable Texts" */
@@ -1062,7 +1042,7 @@ QSplitter::handle {
 }
 
 QSplitter::handle:horizontal {
-    background-image: url(qss:images_dark-light/splitter_vertical_dark.svg);
+    background-image: url(qss:images_dark-light/splitter_vertical_light.svg);
     background-position: center center;
     background-repeat: none;
     margin: 4px 2px 4px 2px;
@@ -1070,7 +1050,7 @@ QSplitter::handle:horizontal {
 }
 
 QSplitter::handle:vertical {
-    background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
+    background-image: url(qss:images_dark-light/splitter_horizontal_light.svg);
     background-position: center center;
     background-repeat: none;
     margin: 2px 4px 2px 4px;
@@ -1085,13 +1065,13 @@ QMainWindow::separator {
 
 QMainWindow::separator:horizontal {
     height: 2px;
-    background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
+    background-image: url(qss:images_dark-light/splitter_horizontal_light.svg);
     margin: 4px 2px 4px 2px;
 }
 
 QMainWindow::separator:vertical {
     width: 2px;
-    background-image: url(qss:images_dark-light/splitter_vertical_dark.svg);
+    background-image: url(qss:images_dark-light/splitter_vertical_light.svg);
     margin: 2px 4px 2px 4px;
 }
 

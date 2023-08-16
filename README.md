@@ -12,9 +12,9 @@ All instructions can be found at [draculatheme.com/freecad](https://draculatheme
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/freecad/graphs/contributors).
 
-| [![Tim Clifford](https://github.com/tim-clifford.png?size=100)](https://github.com/tim-clifford) | [![Chrismettal](https://github.com/chrismettal.png?size=100)](https://gitlab.com/chrismettal)    |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| [Tim Clifford](https://github.com/tim-clifford)                                                  | [Chrismettal](https://gitlab.com/chrismettal)                                                    |
+| [![Tim Clifford](https://github.com/tim-clifford.png?size=100)](https://github.com/tim-clifford) | [![Chrismettal](https://github.com/chrismettal.png?size=100)](https://gitlab.com/chrismettal)    | [![Brandon Beaumia](https://github.com/brandonbeaumia.png?size=100)](https://github.com/brandonbeaumia)  |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| [Tim Clifford](https://github.com/tim-clifford)                                                  | [Chrismettal](https://gitlab.com/chrismettal)                                                    | [Brandon Beaumia](https://github.com/brandonbeaumia)
 
 ## Community
 
