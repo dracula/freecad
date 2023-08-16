@@ -765,29 +765,29 @@ QTabBar QToolButton::left-arrow { /* the arrow mark in the tool buttons */
 }
 
  QTabBar QToolButton::up-arrow:enabled {
-     image: url(qss:images_dark-light/up_arrow_dark.svg);
+     image: url(qss:images_dark-light/up_arrow_light.svg);
 }
 
  QTabBar QToolButton::up-arrow:disabled,
  QTabBar QToolButton::up-arrow:off {
-     image: url(qss:images_dark-light/up_arrow_disabled_dark.svg);
+     image: url(qss:images_dark-light/up_arrow_disabled_light.svg);
 }
 
  QTabBar QToolButton::up-arrow:hover {
-     image: url(qss:images_dark-light/up_arrow_darker.svg);
+     image: url(qss:images_dark-light/up_arrow_lighter.svg);
 }
 
  QTabBar QToolButton::down-arrow:enabled {
-     image: url(qss:images_dark-light/down_arrow_dark.svg);
+     image: url(qss:images_dark-light/down_arrow_light.svg);
 }
 
  QTabBar QToolButton::down-arrow:disabled,
  QTabBar QToolButton::down-arrow:off {
-     image: url(qss:images_dark-light/down_arrow_disabled_dark.svg);
+     image: url(qss:images_dark-light/down_arrow_disabled_light.svg);
 }
 
  QTabBar QToolButton::down-arrow:hover {
-     image: url(qss:images_dark-light/down_arrow_darker.svg);
+     image: url(qss:images_dark-light/down_arrow_lighter.svg);
 }
 
 QTabBar::tear {
@@ -1404,7 +1404,7 @@ QDoubleSpinBox::up-arrow:off,
 QTimeEdit::up-arrow:off,
 QDateEdit::up-arrow:off,
 QDateTimeEdit::up-arrow:off {
-    image: url(qss:images_dark-light/up_arrow_disabled_dark.svg);
+    image: url(qss:images_dark-light/up_arrow_disabled_light.svg);
 }
 
 QAbstractSpinBox::up-arrow:disabled,
@@ -1413,7 +1413,7 @@ QDoubleSpinBox::up-arrow:disabled,
 QTimeEdit::up-arrow:disabled,
 QDateEdit::up-arrow:disabled,
 QDateTimeEdit::up-arrow:disabled {
-    image: url(qss:images_dark-light/up_arrow_disabled_dark.svg);
+    image: url(qss:images_dark-light/up_arrow_disabled_light.svg);
 }
 
 QAbstractSpinBox::down-arrow,
@@ -1441,7 +1441,7 @@ QDoubleSpinBox::down-arrow:off,
 QTimeEdit::down-arrow:off,
 QDateEdit::down-arrow:off,
 QDateTimeEdit::down-arrow:off {
-    image: url(qss:images_dark-light/down_arrow_disabled_dark.svg);
+    image: url(qss:images_dark-light/down_arrow_disabled_light.svg);
 }
 
 QAbstractSpinBox::down-arrow:disabled,
@@ -1450,7 +1450,7 @@ QDoubleSpinBox::down-arrow:disabled,
 QTimeEdit::down-arrow:disabled,
 QDateEdit::down-arrow:disabled,
 QDateTimeEdit::down-arrow:disabled {
-    image: url(qss:images_dark-light/down_arrow_disabled_dark.svg);
+    image: url(qss:images_dark-light/down_arrow_disabled_light.svg);
 }
 
 /* ComboBox */
@@ -1480,7 +1480,7 @@ QComboBox::down-arrow:focus {
 
 QComboBox::down-arrow:off,
 QComboBox::down-arrow:disabled {
-    image: url(qss:images_dark-light/down_arrow_disabled_dark.svg);
+    image: url(qss:images_dark-light/down_arrow_disabled_light.svg);
 }
 
 /* ComboBox menu */
@@ -1697,7 +1697,7 @@ Radio button
 QRadioButton::indicator:unchecked{
     color: black;
     background-color: rgba(0,0,0,40);
-    border: 1px solid #282a36;
+    border: 1px solid #6272a4;
 }
 
 QRadioButton::indicator:checked {
@@ -1736,7 +1736,7 @@ QRadioButton::indicator:disabled {
 }
 
 QRadioButton:focus {
-    border: none;
+    border: 1px solid #535d7f;
 }
 
 
@@ -1755,7 +1755,7 @@ QCheckBox::indicator,
 QGroupBox::indicator {
     color: black;
     background-color: rgba(0,0,0,40);
-    border: 1px solid #282a36;
+    border: 1px solid #6272a4;
     width: 11px;
     height: 11px;
     border-radius:2px;
@@ -1798,7 +1798,7 @@ QGroupBox::indicator:indeterminate {
 }
 
 QCheckBox:focus {
-    border: none;
+    border: 1px solid #535d7f;
 }
 
 
@@ -2080,24 +2080,23 @@ QToolBar > QToolButton:checked:hover {
 
 /*The "show more" button  (it can also be stylable with "QToolBarExtension" */
 QToolBar QToolButton#qt_toolbar_ext_button {
-    margin: 0px;
+    margin: 1px;
     padding: 0px;
-    /*background-image: url(qss:images_dark-light/more_dark.svg);*/
+    qproperty-icon: url(qss:images_dark-light/more_light.svg);
     image: transparent;
     background-repeat: none;
     background-position: center left;
 }
 
 QToolBar QToolButton#qt_toolbar_ext_button:hover {
-    /*background-image: url(qss:images_dark-light/more_light.svg);*/
+    qproperty-icon: url(qss:images_dark-light/more_light.svg);
     border-color: #1b1c24;
-    background-color: #1b1c24;
-}
+    background-color: rgba(255,255,255,20)}
 
 QToolBar QToolButton#qt_toolbar_ext_button:on {
-    /*background-image: url(qss:images_dark-light/more_light.svg);*/
+    qproperty-icon: url(qss:images_dark-light/more_light.svg);
     border-color: #1b1c24;
-    background-color: #1b1c24;
+    background-color: #6272a4;
 }
 
 
