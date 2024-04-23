@@ -3,7 +3,7 @@
   <name>Dracula</name>
   <description>Dracula dark theme for FreeCAD</description>
   <version>0.0.5</version>
-  <maintainer email="tim@clifford.lol">Tim Clifford</maintainer>
+  <maintainer email="eleanor@clifford.lol">Eleanor Clifford</maintainer>
   <license file="LICENSE">MIT</license>
   <url type="repository" branch="master">https://github.com/dracula/freecad</url>
   <icon>resources/icons/Dracula.svg</icon>
