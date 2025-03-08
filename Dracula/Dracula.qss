@@ -1626,28 +1626,22 @@ Tool button inside Task Panel content that works as QPushButtons
 /* found inside Part Design Workbench and "make a draft on a face" Task panel options */
 QSint--ActionGroup QFrame[class="content"] QToolButton {
     color: #d5d6da;
-    text-align: center;
-    background-color: qlineargradient(spread:pad, x1:0, y1:0.3, x2:0, y2:1, stop:0 #1b1c24, stop:1 black);
-    border: 1px solid black;
-    border-bottom-color: black; /* simulates shadow under the button */
-    padding: 2px 6px; /* different than regular QPushButton */
-    margin: 2px; /* different than regular QPushButton */
-    min-height: 16px; /* same as QTabBar QPushButton min-width */
-    border-radius: 4px;
+    background-color: #1A1B23;
+    border: 0px;
+    padding: 3px;
+    padding-right: 13px
 }
 
 QSint--ActionGroup QFrame[class="content"] QToolButton:hover,
 QSint--ActionGroup QFrame[class="content"] QToolButton:focus {
     color: white;
-    border-color: #535d7f;
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #6272a4, stop:1 #535d7f);
 }
 
 QSint--ActionGroup QFrame[class="content"] QToolButton:disabled,
 QSint--ActionGroup QFrame[class="content"] QToolButton:disabled:checked {
-    color: #1b1c24;
-    border-color: #1b1c24;
-    background-color: #1b1c24;
+    color: #1A1B23;
+    background-color: #1A1B23;
 }
 
 QSint--ActionGroup QFrame[class="content"] QToolButton:pressed {
