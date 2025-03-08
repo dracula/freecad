@@ -2314,8 +2314,3 @@ QPushButton#NavigationIndicator::menu-indicator {
     image: none;
     width: 0px;
 }
-
-QToolBar QToolButton[popupMode="1"] {
-    width: 100px;
-    background: red;
-}
