@@ -1,21 +1,97 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
-  <name>Dracula</name>
-  <description>Dracula dark theme for FreeCAD</description>
-  <version>0.0.6</version>
-  <maintainer email="eleanor@clifford.lol">Eleanor Clifford</maintainer>
-  <license file="LICENSE">MIT</license>
-  <url type="repository" branch="master">https://github.com/dracula/freecad</url>
-  <icon>resources/icons/Dracula.svg</icon>
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+    standalone = 'no'
+?>
+<package
+    Manifest:schemaLocation = 'HTTPS://Addons.FreeCAD.Org/Manifest https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases/download/v1.6/Schema.xsd'
+    xmlns:Manifest = 'http://www.w3.org/2001/XMLSchema-instance'
+    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
 
-  <content>
-    <preferencepack>
-      <name>Dracula</name>
-      <description>Dracula dark theme for FreeCAD</description>
-      <tag>color</tag>
-      <tag>dark</tag>
-      <tag>dracula</tag>
-    </preferencepack>
-  </content>
+    format = '1'
+>
+ 
+    <version>0.0.6</version>
+
+    <!-- [ General ] - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    
+    <description>Theme for the dead of night.</description>
+    <icon>resources/icons/Dracula.svg</icon>
+    <name>Dracula</name>
+
+    <tag>Twilight</tag>
+    <tag>Night</tag>
+    <tag>Dark</tag>
+
+    <!-- [ People ]  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <maintainer 
+        email = 'brandon.beaumia@gmail.com' 
+    >Brandon Beaumia</maintainer>
+
+    <maintainer 
+        email = 'chrismettal@binary-6.de' 
+    >Chris Mettal</maintainer>
+
+    <maintainer 
+        email = 'eleanor@clifford.lol' 
+    >Eleanor Clifford</maintainer>
+
+    <author>zenorocha</author>
+    
+    <!-- [ Licences ]  - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <license 
+        file = 'LICENSE'
+    >MIT</license>
+
+    <!-- [ Links ] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <url
+        type = 'bugtracker'
+    >https://github.com/dracula/freecad/issues</url>
+
+    <url
+        type = 'documentation'
+    >https://draculatheme.com/freecad</url>
+
+    <url 
+        branch = 'master'
+        type = 'repository'
+    >https://github.com/dracula/freecad</url>
+    
+    <url
+        type = 'discussion'
+    >https://github.com/orgs/dracula/discussions</url>
+
+    <url
+        type = 'discussion'
+    >https://draculatheme.com/discord-invite</url>
+
+    <url
+        type = 'website'
+    >https://draculatheme.com/freecad</url>
+
+    <url
+        type = 'website'
+    >https://twitter.com/draculatheme</url>
+
+    <url
+        type = 'readme'
+    >https://github.com/dracula/freecad/blob/master/README.md</url>
+
+    <!-- [ Content ] - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <content>
+        <preferencepack>
+            
+            <name>Dracula</name>
+
+            <tag>Twilight</tag>
+            <tag>Night</tag>
+            <tag>Dark</tag>
+
+        </preferencepack>
+    </content>
 
 </package>
