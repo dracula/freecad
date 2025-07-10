@@ -1471,12 +1471,12 @@ QComboBox {
 
 QComboBox QAbstractItemView {
     color: #9799a3; /* same as regular QComboBox color */
-    background-color: transparent;
+    background-color:  #1b1c24;
     selection-color: #eaebed;
     selection-background-color: #6272a4;
     border-width: 5px 0px 5px 0px;
     border-style: solid;
-    border-color: transparent;
+    border-color: #1b1c24;
     margin: 0px -1px 0px 0px; /* hack for Mac... try it on Windows and Linux */
 }
 
