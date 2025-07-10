@@ -20,14 +20,6 @@ QTabWidget::pane {
   border: transparent;
 }
 
-QAbstractItemView {
-  background-color: transparent;
-  alternate-background-color: #1b1c24; /* related with QListView background  */
-  color: #65A2E5;
-  border: transparent;
-  padding-right: 5px;
-}
-
 Gui--OverlayTitleBar,
 Gui--OverlaySplitterHandle {
   background-color: transparent;
