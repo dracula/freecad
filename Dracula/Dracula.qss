@@ -81,6 +81,10 @@ Reset elements
     color: #eaebed; /* Default color for labels and different text elements that usually use dark colors */
 }
 
+QLabel {
+    background-color: transparent /* Required to show the contents of Gui--NotificationLabel */
+}
+
 /* specific reset for elements inside QToolBar */
 QToolBar * {
     margin: 0px;
@@ -1087,6 +1091,17 @@ QPlainTextEdit:focus {
     border: 1px solid #1b1c24;
     border-radius: 3px;
     margin: 4px;
+}
+
+
+/*==================================================================================================
+Notification / error popup box
+==================================================================================================*/
+
+Gui--NotificationLabel {
+  background-color: #282a36;
+  border: 1px solid #020202;
+  border-radius: 2px;
 }
 
 
